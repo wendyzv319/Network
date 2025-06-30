@@ -14,7 +14,7 @@ namespace ProjectNetwork
         private bool[,] _verifyEdge;
         public Network(int countOfItems)
         {
-            ArgumentOutOfRangeException.ThrowIfNegativeOrZero(countOfItems);
+            ArgumentOutOfRangeException.ThrowIfNegativeOrZero(countOfItems,"Must be a number greater than 0");
             _countOfItems = countOfItems;
             _verifyEdge = new bool[countOfItems, countOfItems];
         }
